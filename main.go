@@ -2,18 +2,17 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 	// Kurs dolar ke rupiah
-	dolar := 5
-	rupiah := 15524 * dolar
+	dolar := 5.0
 	fmt.Println("Kurs dolar ke rupiah")
 	fmt.Println("-------------------------------------------")
-	fmt.Println("Rp", rupiah)
+	fmt.Println("Rp", 15524.50*dolar)
 	fmt.Println("===========================================")
 
 	// Luas lingkaran
 	phi := 3.14
-	r := 5.2
+	r := 5.0
 	luas := phi * r * r
 
 	fmt.Println("Luas lingkaran")
@@ -25,16 +24,16 @@ func main(){
 	fmt.Println("FizzBuzz")
 	fmt.Println("-------------------------------------------")
 	for i := 1; i <= 100; i++ {
-        if i % 15 == 0 {
+		if i%15 == 0 {
 			fmt.Println("FizzBuzz")
-		}else if i % 5 == 0 {
+		} else if i%5 == 0 {
 			fmt.Println("Buzz")
-		}else if i % 3 == 0 {
+		} else if i%3 == 0 {
 			fmt.Println("Fizz")
-		}else{
+		} else {
 			fmt.Println(i)
 		}
-    }
+	}
 
 	fmt.Println("===========================================")
 
@@ -45,13 +44,13 @@ func main(){
 	januari := 31
 	bulan1 := "januari"
 	bulan2 := "februari"
-	tgl1 := 3 
+	tgl1 := 3
 	tgl2 := 10
 
-	if bulan1 != bulan2{
+	if bulan1 != bulan2 {
 		fmt.Println(januari - tgl1 + tgl2)
-	}else if bulan1 == bulan2{
-		fmt.Println(tgl2-tgl1)
+	} else {
+		fmt.Println(tgl2 - tgl1)
 	}
-	
+
 }

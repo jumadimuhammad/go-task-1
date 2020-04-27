@@ -2,8 +2,8 @@ package main
 
 import "fmt"
 
-func main(){
-	
+func main() {
+
 	dolar := 5
 	rupiah := 15524 * dolar
 	fmt.Println("Kurs dolar ke rupiah")
@@ -11,5 +11,4 @@ func main(){
 	fmt.Println("Rp", rupiah)
 	fmt.Println("===========================================")
 
-	
 }
